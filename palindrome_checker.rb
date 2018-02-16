@@ -6,14 +6,14 @@ def check_even(input)
   j = input.length - 1
   while j >= input.length / 2
     if input[i] != input[j]
-      puts "\n\t\t#{input} is not a palindrome!\n"
+      puts "\n\t\t#{@input} is not a palindrome!\n"
       menu
     else
       i += 1
       j -= 1
     end
   end
-  puts "\n\t\t#{input} is a palindrome!\n"
+  puts "\n\t\t#{@input} is a palindrome!\n"
   menu
 end
 
@@ -26,14 +26,14 @@ def check_odd(input)
   j = input.length - 1
   while j >= input.length / 2
     if input[i] != input[j]
-      puts "\n\t\t#{input} is not a palindrome!\n"
+      puts "\n\t\t#{@input} is not a palindrome!\n"
       menu
     else
       i += 1
       j -= 1
     end
   end
-  puts "\n\t\t#{input} is a palindrome!\n"
+  puts "\n\t\t#{@input} is a palindrome!\n"
   menu
 
 end
