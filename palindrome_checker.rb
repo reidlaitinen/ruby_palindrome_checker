@@ -39,7 +39,9 @@ def check_odd(input)
 end
 
 def clean_input(input)
-
+  input = input.gsub(/\W/, '').downcase
+  puts "\tCleaned input: #{input}"
+  return input
 end
 
 def check_palindrome(input)
@@ -58,7 +60,7 @@ def menu
     if @input == 'quit'
       exit
     else
-      check_palindrome(@input)
+      check_palindrome(clean_input(@input))
     end
 end
 
